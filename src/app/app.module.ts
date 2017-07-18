@@ -12,6 +12,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {SaishiPage} from "../pages/saishi/saishi";
 import {MyPage} from "../pages/my/my";
+import {MymessagePage} from "../pages/mymessage/mymessage";
+import {MyindentPage} from "../pages/myindent/myindent";
 
 @NgModule({
   declarations: [
@@ -21,6 +23,8 @@ import {MyPage} from "../pages/my/my";
     IndexPage,
     SaishiPage,
     MyPage,
+    MymessagePage,
+    MyindentPage,
     TabsPage
   ],
   imports: [
@@ -35,6 +39,8 @@ import {MyPage} from "../pages/my/my";
     IndexPage,
     SaishiPage,
     MyPage,
+    MymessagePage,
+    MyindentPage,
     TabsPage
   ],
   providers: [

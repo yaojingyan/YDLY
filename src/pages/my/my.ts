@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {MymessagePage} from "../mymessage/mymessage";
+import {MyindentPage} from "../myindent/myindent";
 
 /**
  * Generated class for the MyPage page.
@@ -14,11 +16,15 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class MyPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    // console.log('ionViewDidLoad MyPage');
+  goMessage(){
+    this.navCtrl.push(MymessagePage)
   }
 
+  goIndent(){
+    this.navCtrl.push(MyindentPage)
+  }
 }
