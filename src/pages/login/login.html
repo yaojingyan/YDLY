@@ -1,0 +1,135 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+
+
+</ion-header>
+
+
+<ion-content >
+  <img src="assets/images/bg1.jpg" alt="">
+  <h2>云动洛阳</h2>
+  <h5>CLOUND SPORT</h5>
+  <div class="cont">
+    <input type="text" placeholder="请输入手机号" class="topinput" [(ngModel)]="user.name">
+    <input type="password" placeholder="请输入密码" [(ngModel)]="user.pwd">
+    <button>忘记密码</button>
+  </div>
+    <button class="login" (click)="gologin()">登录</button>
+    <button class="dxlogin" (click)="godxlogin()">切换验证码登录</button>
+    <button class="zhuce" (click)="zhuce()">新用户注册</button>
+</ion-content>
+
+
+<style>
+  body
+  {
+    height:736px;
+    width: 100%;
+  }
+  img
+  {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*z-index: 1;*/
+  }
+
+  h2
+  {
+    width:40%;
+    top: 100px;
+    left: auto;
+    text-align: center;
+    color: white;
+    z-index:990;
+    position: absolute;
+    left: 30%;
+    font-size: 40px;
+    font-family: 'YouYuan';
+  }
+  h5
+  {
+    width:40%;
+    top: 150px;
+    left: auto;
+    text-align: center;
+    color: white;
+    z-index:990;
+    position: absolute;
+    left: 30%;
+    font-family: 'Novecento';
+  }
+  .cont
+  {
+    top: 250px;
+    height: 60px;
+    width: 100%;
+    background-color: #b1abb9;
+    line-height:30px;
+    color: white;
+    opacity:0.8;
+    position: absolute;
+  }
+  .cont input
+  {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    height: 30px;
+    position: relative;
+    left: 10%;
+    background-color: transparent;
+    border:0.5px solid transparent;
+    color: white !important;
+  }
+  .cont button
+  {
+    background-color: transparent;
+    color: white;
+  }
+  button
+  {
+    position: relative;
+    top: 330px;
+    width: 85%;
+    height:25px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+
+    left: 7%;
+  }
+  button.login
+  {
+    background-color: dodgerblue;
+    border-radius:3px;
+  }
+
+
+
+  .cont input.topinput
+  {
+    border-bottom:1px solid white;
+  }
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+    color:white;
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:white;
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:white;
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:white;
+  }
+</style>

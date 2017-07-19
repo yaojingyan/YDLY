@@ -12,6 +12,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {SaishiPage} from "../pages/saishi/saishi";
 import {MyPage} from "../pages/my/my";
+import {LoginPage} from "../pages/login/login";
+import {HttpModule} from "@angular/http";
+import {ZhucePage} from "../pages/zhuce/zhuce";
 
 @NgModule({
   declarations: [
@@ -21,10 +24,12 @@ import {MyPage} from "../pages/my/my";
     IndexPage,
     SaishiPage,
     MyPage,
-    TabsPage
+    TabsPage,
+    LoginPage,
+    ZhucePage
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -35,7 +40,9 @@ import {MyPage} from "../pages/my/my";
     IndexPage,
     SaishiPage,
     MyPage,
-    TabsPage
+    TabsPage,
+    LoginPage,
+    ZhucePage
   ],
   providers: [
     StatusBar,
