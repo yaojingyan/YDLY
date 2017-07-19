@@ -18,6 +18,8 @@ export class MymessagePage {
   }
 
   ionViewDidLoad() {
+
+
     console.log('ionViewDidLoad MymessagePage');
   }
 
