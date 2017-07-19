@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import {App, NavController, NavParams} from 'ionic-angular';
 import {LoginPage} from "../login/login";
 import {UserService} from "../../app/user.service";
+import {MymessagePage} from "../mymessage/mymessage";
+import {MyindentPage} from "../myindent/myindent";
 
 /**
  * Generated class for the MyPage page.
@@ -23,22 +25,23 @@ export class MyPage {
               public us:UserService
   ) {
 
-    if (!us.user)
-    {
+
+  }
+
+
+  goMessage(){
+    this.navCtrl.push(MymessagePage)
+  }
+
+  goIndent(){
+    this.navCtrl.push(MyindentPage)
+  }
+
+  golog()
+  {
       this.navCtrl.setRoot(LoginPage);
-    }else{
-      this.user.push(us.user);
+      this.user.push(this.us.user);
       console.log(this.user[0]);
-
-
-    }
-
   }
-
-  ionViewDidLoad() {
-    // console.log('ionViewDidLoad MyPage');
-  }
-
-
 
 }
