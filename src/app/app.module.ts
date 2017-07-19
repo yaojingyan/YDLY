@@ -12,11 +12,13 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {SaishiPage} from "../pages/saishi/saishi";
 import {MyPage} from "../pages/my/my";
+
 import {LoginPage} from "../pages/login/login";
 import {HttpModule} from "@angular/http";
 import {ZhucePage} from "../pages/zhuce/zhuce";
 import {MymessagePage} from "../pages/mymessage/mymessage";
 import {MyindentPage} from "../pages/myindent/myindent";
+import {UserService} from "./user.service";
 
 @NgModule({
   declarations: [
@@ -26,12 +28,11 @@ import {MyindentPage} from "../pages/myindent/myindent";
     IndexPage,
     SaishiPage,
     MyPage,
+    MymessagePage,
+    MyindentPage,
     TabsPage,
     LoginPage,
     ZhucePage
-    MymessagePage,
-    MyindentPage,
-    TabsPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -47,14 +48,15 @@ import {MyindentPage} from "../pages/myindent/myindent";
     MyPage,
     MymessagePage,
     MyindentPage,
-    TabsPage
     TabsPage,
     LoginPage,
     ZhucePage
+
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    UserService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -5,6 +5,7 @@ import {TabsPage} from "../tabs/tabs";
 import {Http} from "@angular/http";
 import 'rxjs/add/operator/toPromise'
 import {ZhucePage} from "../zhuce/zhuce";
+import {UserService} from "../../app/user.service";
 /**
  * Generated class for the LoginPage page.
  *
@@ -22,7 +23,8 @@ export class LoginPage {
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public app:App,
-              public http:Http
+              public http:Http,
+              public us:UserService
   ) {
 
   }
@@ -38,6 +40,7 @@ export class LoginPage {
       .then((res)=>{
       console.log(res);
         if (res.json().success){
+          this.us.user = this.user;
           this.app.getRootNav().setRoot(TabsPage);
 
         }

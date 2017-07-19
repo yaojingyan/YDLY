@@ -61,6 +61,18 @@
     font-size:14px;
     line-height:26px;
   }
+
+  .uname
+  {
+    width: 50px;
+    height: 20px;
+    background-color: red;
+    z-index: 999;
+    color: white;
+    position: absolute;
+    left:160px;
+    top:70px;
+  }
 </style>
 
 <ion-content>
@@ -72,7 +84,8 @@
       <div class="touxiang">
 
       </div>
-      <!--<div>name</div>-->
+
+      <div class="uname" *ngFor="let n of user">{{n.name}}</div>
       <div class="code">
         <img src="assets/myimg/code.png">
       </div>

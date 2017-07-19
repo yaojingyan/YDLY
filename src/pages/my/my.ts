@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {App, NavController, NavParams} from 'ionic-angular';
 import {LoginPage} from "../login/login";
+import {UserService} from "../../app/user.service";
 
 /**
  * Generated class for the MyPage page.
@@ -14,22 +15,29 @@ import {LoginPage} from "../login/login";
   templateUrl: 'my.html',
 })
 export class MyPage {
+  // user:{};
+  user = [];
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams,
+              public app: App,
+              public us:UserService
+  ) {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams , public app:App) {
-    let uname = ' ';
-    if(uname==' ')
+    if (!us.user)
     {
+      this.navCtrl.setRoot(LoginPage);
+    }else{
+      this.user.push(us.user);
+      console.log(this.user[0]);
 
-      app.getRootNav().setRoot(LoginPage);
+
     }
+
   }
 
-
-
-
-
-
-
+  ionViewDidLoad() {
+    // console.log('ionViewDidLoad MyPage');
+  }
 
 
 
