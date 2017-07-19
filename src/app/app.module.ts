@@ -15,6 +15,8 @@ import {MyPage} from "../pages/my/my";
 import {LoginPage} from "../pages/login/login";
 import {HttpModule} from "@angular/http";
 import {ZhucePage} from "../pages/zhuce/zhuce";
+import {MymessagePage} from "../pages/mymessage/mymessage";
+import {MyindentPage} from "../pages/myindent/myindent";
 
 @NgModule({
   declarations: [
@@ -27,6 +29,9 @@ import {ZhucePage} from "../pages/zhuce/zhuce";
     TabsPage,
     LoginPage,
     ZhucePage
+    MymessagePage,
+    MyindentPage,
+    TabsPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -40,6 +45,9 @@ import {ZhucePage} from "../pages/zhuce/zhuce";
     IndexPage,
     SaishiPage,
     MyPage,
+    MymessagePage,
+    MyindentPage,
+    TabsPage
     TabsPage,
     LoginPage,
     ZhucePage

@@ -1,18 +1,108 @@
-<!--
-  Generated template for the MyPage page.
+<style>
+  /**{*/
+    /*background-color: #eff3f2;*/
+  /*}*/
+  .header{
+    width: 100%;
+    height: 200px;
+    background-color: #007aff;
+    position: relative;
+  }
+  .set img{
+    position: absolute;
+    top:15px;
+    right:10px;
+  }
+  .intro{
+    position: absolute;
+    bottom:0;
+    height:150px;
+    width:100%;
+  }
+  .intro .touxiang{
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    border:1px solid #fff;
+    border-radius: 50%;
+    position: relative;
+    top:25px;
+    left:25px;
+  }
+  .intro .code{
+    position: absolute;
+    right:10px;
+    top:50%;
+    transform: translateY(-50%);
+  }
+  .menu{
+    padding:10px 0 20px 0;
+    background-color: #eff3f2;
+  }
+  ion-grid{
+    background-color: #fff;
+  }
+  ion-col{
+    padding:10px 0;
+    text-align: center;
+    border-right:1px solid #ccc;
+  }
+  ion-col:nth-child(4){
+    border-right: none;
+  }
+  img{
+    width: 24px;
+    height: 24px;
+    margin:0px 10px;
+    vertical-align: middle;
+  }
+  ion-item{
+    padding: 0;
+    font-size:14px;
+    line-height:26px;
+  }
+</style>
 
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
+<ion-content>
+  <div class="header">
+    <div class="set">
+      <img src="assets/myimg/setting.png" alt="">
+    </div>
+    <div class="intro">
+      <div class="touxiang">
 
-  <ion-navbar>
-    <ion-title>我的</ion-title>
-  </ion-navbar>
+      </div>
+      <!--<div>name</div>-->
+      <div class="code">
+        <img src="assets/myimg/code.png">
+      </div>
+    </div>
+  </div>
+  <div class="menu">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-3 (click)="goMessage()">
+          <img src="assets/myimg/message.png"><br>
+          消息
+        </ion-col>
+        <ion-col col-3 (click)="goIndent()">
+          <img src="assets/myimg/indent.png"><br
+        >订单
+        </ion-col>
+        <ion-col col-3><img src="assets/myimg/test.png"><br>体测</ion-col>
+        <ion-col col-3><img src="assets/myimg/repairs.png"><br>保修</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
-</ion-header>
-
-
-<ion-content padding>
-
+    <ion-item-group>
+      <ion-item><img src="assets/myimg/double.png" alt="">教练</ion-item>
+      <ion-item><img src="assets/myimg/fs-institute.png" alt="">场地</ion-item>
+      <ion-item><img src="assets/myimg/gift.png" alt="">活动</ion-item>
+      <ion-item><img src="assets/myimg/cup.png" alt="">赛事</ion-item>
+      <ion-item><img src="assets/myimg/home.png" alt="">培训</ion-item>
+      <ion-item><img src="assets/myimg/dis-organization.png" alt="">社团</ion-item>
+      <ion-item><img src="assets/myimg/shoe.png" alt="">智能跑</ion-item>
+      <ion-item><img src="assets/myimg/shopping.png" alt="">体育商城</ion-item>
+    </ion-item-group>
 </ion-content>
