@@ -2,19 +2,23 @@ import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the MymessagePage page.
+ * Generated class for the MyrepairPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 
 @Component({
-  selector: 'page-mymessage',
-  templateUrl: 'mymessage.html',
+  selector: 'page-myrepair',
+  templateUrl: 'myrepair.html',
 })
-export class MymessagePage {
+export class MyrepairPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad MyrepairPage');
   }
 
 }
