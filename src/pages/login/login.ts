@@ -42,13 +42,10 @@ export class LoginPage {
       console.log(res);
         if (res.json().success){
           this.us.user = this.user;
-          this.app.getRootNav().setRoot(TabsPage);
+          this.navCtrl.setRoot(MyPage);
 
         }
-        else
-        {
-          alert('密码错误')
-        }
+
       })
 
   }

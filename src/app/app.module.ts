@@ -38,7 +38,7 @@ import {HomePage} from "../pages/home/home";
     ZhucePage,
     MyrepairPage,
     MytestPage,
-    SettingPage
+    SettingPage,
     ZhucePage,
     MissPage
   ],
@@ -59,7 +59,7 @@ import {HomePage} from "../pages/home/home";
     TabsPage,
     LoginPage,
     ZhucePage,
-    MissPage
+    MissPage,
 
     ZhucePage,
     MyrepairPage,
