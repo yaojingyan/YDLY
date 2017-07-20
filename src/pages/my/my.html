@@ -64,20 +64,20 @@
 
   .uname
   {
-    width: 50px;
+    width: 70px;
     height: 20px;
     background-color: red;
     z-index: 999;
     color: white;
     position: absolute;
-    left:160px;
+    left:130px;
     top:70px;
   }
 </style>
 
 <ion-content>
   <div class="header">
-    <div class="set">
+    <div class="set" (click)="set()">
       <img src="assets/myimg/setting.png" alt="">
     </div>
     <div class="intro">
@@ -104,11 +104,11 @@
           <img src="assets/myimg/indent.png"><br
         >订单
         </ion-col>
-        <ion-col col-3>
+        <ion-col col-3 (click)="goTest()">
           <img src="assets/myimg/test.png"><br>
           体测
         </ion-col>
-        <ion-col col-3>
+        <ion-col col-3 (click)="goRepair()">
           <img src="assets/myimg/repairs.png"><br>
           保修
         </ion-col>

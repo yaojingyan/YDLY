@@ -2,8 +2,6 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-
-import { IndexPage } from '../pages/index/index';
 import { ContactPage } from '../pages/contact/contact';
 import { SearchPage } from '../pages/search/search';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -20,19 +18,27 @@ import {MymessagePage} from "../pages/mymessage/mymessage";
 import {MyindentPage} from "../pages/myindent/myindent";
 import {UserService} from "./user.service";
 import {MissPage} from "../pages/miss/miss";
+import {MyrepairPage} from "../pages/myrepair/myrepair";
+import {MytestPage} from "../pages/mytest/mytest";
+import {SettingPage} from "../pages/setting/setting";
+import {HomePage} from "../pages/home/home";
 
 @NgModule({
   declarations: [
     MyApp,
     ContactPage,
     SearchPage,
-    IndexPage,
+    HomePage,
     SaishiPage,
     MyPage,
     MymessagePage,
     MyindentPage,
     TabsPage,
     LoginPage,
+    ZhucePage,
+    MyrepairPage,
+    MytestPage,
+    SettingPage
     ZhucePage,
     MissPage
   ],
@@ -45,7 +51,7 @@ import {MissPage} from "../pages/miss/miss";
     MyApp,
     ContactPage,
     SearchPage,
-    IndexPage,
+    HomePage,
     SaishiPage,
     MyPage,
     MymessagePage,
@@ -55,6 +61,10 @@ import {MissPage} from "../pages/miss/miss";
     ZhucePage,
     MissPage
 
+    ZhucePage,
+    MyrepairPage,
+    MytestPage,
+    SettingPage
   ],
   providers: [
     StatusBar,
