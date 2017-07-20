@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title class="title">注册</ion-title>
+    <ion-title class="title">重置密码</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -16,14 +16,14 @@
 <ion-content >
   <div class="cont">
     <div class="yanzhengkuang">
-      <input type="text" placeholder="请输入手机号" maxlength="11" minlength="11" class="tel" [(ngModel)]="user.phone">
+      <input type="text" placeholder="请输入手机号" class="tel" [(ngModel)]="user.phone">
       <input type="text" placeholder="请输入验证码"><button class="yzm">获取验证码</button>
     </div>
     <div class="mimakuang">
       <input type="password" placeholder="请输入6位以上密码" [(ngModel)]="user.password">
     </div>
-    <button class="zhuce" (click)="gozhuce()">注册</button>
-    <span class="accept">点击注册即表示同意<a>服务条款</a></span>
+    <button class="zhuce" (click)="gorest()">重置</button>
+    <span class="accept">点击重置即表示同意<a>服务条款</a></span>
   </div>
 </ion-content>
 

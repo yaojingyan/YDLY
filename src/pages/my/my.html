@@ -84,8 +84,10 @@
       <div class="touxiang">
 
       </div>
-
-      <div class="uname" (click)="golog()">点击登录</div>
+      <div>
+        <button (click)="golog()" *ngIf="!phone">请登录</button>
+      </div>
+      <div class="uname" >{{phone}}</div>
       <div class="code">
         <img src="assets/myimg/code.png">
       </div>

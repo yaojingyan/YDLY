@@ -12,13 +12,20 @@ import {MyindentPage} from "../myindent/myindent";
 export class MyPage {
   // user:{};
   user = [];
+  phone='';
+
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public app: App,
               public us:UserService
   ) {
 
-
+    if(this.us.user)
+    {
+      this.user.push(this.us.user);
+      console.log(this.user[0].phone);
+      this.phone = this.user[0].phone;
+    }
   }
 
 
@@ -33,8 +40,9 @@ export class MyPage {
   golog()
   {
       this.navCtrl.setRoot(LoginPage);
-      this.user.push(this.us.user);
-      console.log(this.user[0]);
   }
+
+
+
 
 }

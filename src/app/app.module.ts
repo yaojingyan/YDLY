@@ -19,6 +19,7 @@ import {ZhucePage} from "../pages/zhuce/zhuce";
 import {MymessagePage} from "../pages/mymessage/mymessage";
 import {MyindentPage} from "../pages/myindent/myindent";
 import {UserService} from "./user.service";
+import {MissPage} from "../pages/miss/miss";
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {UserService} from "./user.service";
     MyindentPage,
     TabsPage,
     LoginPage,
-    ZhucePage
+    ZhucePage,
+    MissPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -50,7 +52,8 @@ import {UserService} from "./user.service";
     MyindentPage,
     TabsPage,
     LoginPage,
-    ZhucePage
+    ZhucePage,
+    MissPage
 
   ],
   providers: [

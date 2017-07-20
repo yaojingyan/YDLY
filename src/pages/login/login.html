@@ -16,12 +16,12 @@
   <h2>云动洛阳</h2>
   <h5>CLOUND SPORT</h5>
   <div class="cont">
-    <input type="text" placeholder="请输入手机号" class="topinput" [(ngModel)]="user.name">
-    <input type="password" placeholder="请输入密码" [(ngModel)]="user.pwd">
-    <button>忘记密码</button>
+    <input type="text" placeholder="请输入手机号" class="topinput" [(ngModel)]="user.phone">
+    <input type="password" placeholder="请输入密码" [(ngModel)]="user.password">
+    <button class="misspwd" (click)="misspwd()">忘记密码</button>
   </div>
     <button class="login" (click)="gologin()">登录</button>
-    <button class="dxlogin" (click)="godxlogin()">切换验证码登录</button>
+    <button class="dxlogin" (click)="godxlogin()"></button>
     <button class="zhuce" (click)="zhuce()">新用户注册</button>
 </ion-content>
 

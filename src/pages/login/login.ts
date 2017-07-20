@@ -6,6 +6,7 @@ import {Http} from "@angular/http";
 import 'rxjs/add/operator/toPromise'
 import {ZhucePage} from "../zhuce/zhuce";
 import {UserService} from "../../app/user.service";
+import {MissPage} from "../miss/miss";
 /**
  * Generated class for the LoginPage page.
  *
@@ -44,6 +45,10 @@ export class LoginPage {
           this.app.getRootNav().setRoot(TabsPage);
 
         }
+        else
+        {
+          alert('密码错误')
+        }
       })
 
   }
@@ -57,6 +62,10 @@ export class LoginPage {
     this.navCtrl.push(ZhucePage);
   }
 
+  misspwd()
+  {
+    this.navCtrl.push(MissPage);
+  }
 
 
 
