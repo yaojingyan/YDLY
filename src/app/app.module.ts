@@ -22,6 +22,7 @@ import {MyrepairPage} from "../pages/myrepair/myrepair";
 import {MytestPage} from "../pages/mytest/mytest";
 import {SettingPage} from "../pages/setting/setting";
 import {HomePage} from "../pages/home/home";
+import {NewsdetailPage} from "../pages/newsdetail/newsdetail";
 
 @NgModule({
   declarations: [
@@ -41,6 +42,8 @@ import {HomePage} from "../pages/home/home";
     SettingPage,
     ZhucePage,
     MissPage
+    SettingPage,
+    NewsdetailPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -64,7 +67,8 @@ import {HomePage} from "../pages/home/home";
     ZhucePage,
     MyrepairPage,
     MytestPage,
-    SettingPage
+    SettingPage,
+    NewsdetailPage
   ],
   providers: [
     StatusBar,
