@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header  class="homeheader">
   <ion-navbar>
     <ion-title class="hometitle">
       云动洛阳
@@ -7,7 +7,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content>
+<ion-content class="home">
   <ion-slides class="slide" autoplay="3000" loop pager>
     <ion-slide>
       <img src="assets/homeimg/slide1.jpg" alt="">
@@ -87,18 +87,19 @@
       </ion-col>
     </ion-row>
   </ion-grid>
-  <div class="news">
-    <div class="newstitle">
+  <div>
+    <div class="news">
       <span>新闻公告</span>
     </div>
     <ion-list>
-      <button ion-item *ngFor="let newsitem of items" class="newsbox">
+      <button ion-item *ngFor="let newsitem of news"
+              class="newsbox" (click)="itemSelected(newsitem)">
         <div class="newsimg">
-          <img src="" alt="">
+          <img src="{{newsitem.newsimg}}" alt="">
         </div>
-        <span class="newstitle">东北虎王KO日本拳手</span>
-        <span class="newscomment">0评</span>
-        <p class="newsSubtitle">副标题</p>
+        <span class="newstitle">{{newsitem.newstitle}}</span>
+        <span class="newscomment">{{newsitem.newscomment}}评</span>
+        <p class="newsSubtitle">{{newsitem.newssubtitle}}</p>
       </button>
     </ion-list>
   </div>

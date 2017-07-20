@@ -1,0 +1,26 @@
+<ion-header class="newsheader">
+  <ion-navbar>
+    <ion-title>
+      新闻公告
+      <img src="assets/homeimg/discuss.png" alt="写评论" float-right>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div [innerHTML]="newsdetail.newscontent"></div>
+</ion-content>
+
+
+<ion-footer>
+  <ion-toolbar  class="newsdetailfooter">
+    <input placeholder="没事你就说两句" type="text">
+    <ion-buttons end>
+      <button icon-right class="newsdetail">
+        评论
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+
