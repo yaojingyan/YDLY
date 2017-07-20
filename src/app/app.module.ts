@@ -41,7 +41,7 @@ import {NewsdetailPage} from "../pages/newsdetail/newsdetail";
     MytestPage,
     SettingPage,
     ZhucePage,
-    MissPage
+    MissPage,
     SettingPage,
     NewsdetailPage
   ],
