@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的社团</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="myorangization">
+  <div class="orangizationtab">
+    <ion-segment [(ngModel)]="orangizations">
+      <ion-segment-button value="参加的" class="orangizations">
+        参加的
+      </ion-segment-button>
+      <ion-segment-button value="关注的" class="orangizations">
+        关注的
+      </ion-segment-button>
+      <ion-segment-button value="创建的" class="orangizations">
+        创建的
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-content>

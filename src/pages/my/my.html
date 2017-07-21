@@ -1,8 +1,5 @@
 <style>
-  /**{*/
-    /*background-color: #eff3f2;*/
-  /*}*/
-  .header{
+  .my{
     width: 100%;
     height: 200px;
     background-color: #007aff;
@@ -62,21 +59,23 @@
     line-height:26px;
   }
 
-  .uname
+  .uname,.my-login button
   {
-    width: 70px;
+    width: 100px;
     height: 20px;
-    background-color: red;
-    z-index: 999;
+    background-color:transparent;
     color: white;
     position: absolute;
     left:130px;
     top:70px;
   }
+  .my-login button{
+    z-index: 999;
+  }
 </style>
 
 <ion-content>
-  <div class="header">
+  <div class="my">
     <div class="set" (click)="set()">
       <img src="assets/myimg/setting.png" alt="">
     </div>
@@ -84,7 +83,7 @@
       <div class="touxiang">
 
       </div>
-      <div>
+      <div class="my-login">
         <button (click)="golog()" *ngIf="!phone">请登录</button>
       </div>
       <div class="uname" >{{phone}}</div>
@@ -117,13 +116,13 @@
   </div>
 
     <ion-item-group>
-      <ion-item><img src="assets/myimg/double.png" alt="">教练</ion-item>
-      <ion-item><img src="assets/myimg/fs-institute.png" alt="">场地</ion-item>
-      <ion-item><img src="assets/myimg/gift.png" alt="">活动</ion-item>
-      <ion-item><img src="assets/myimg/cup.png" alt="">赛事</ion-item>
-      <ion-item><img src="assets/myimg/home.png" alt="">培训</ion-item>
-      <ion-item><img src="assets/myimg/dis-organization.png" alt="">社团</ion-item>
-      <ion-item><img src="assets/myimg/shoe.png" alt="">智能跑</ion-item>
+      <ion-item (click)="goCoach()"><img src="assets/myimg/double.png" alt="">教练</ion-item>
+      <ion-item (click)="goPlace()"><img src="assets/myimg/fs-institute.png" alt="">场地</ion-item>
+      <ion-item (click)="goActivity()"><img src="assets/myimg/gift.png" alt="">活动</ion-item>
+      <ion-item (click)="goCompetition()"><img src="assets/myimg/cup.png" alt="">赛事</ion-item>
+      <ion-item (click)="goTrain()"><img src="assets/myimg/home.png" alt="">培训</ion-item>
+      <ion-item (click)="goOrganization()"><img src="assets/myimg/dis-organization.png" alt="">社团</ion-item>
+      <ion-item (click)="goRun()"><img src="assets/myimg/shoe.png" alt="">智能跑</ion-item>
       <ion-item><img src="assets/myimg/shopping.png" alt="">体育商城</ion-item>
     </ion-item-group>
 </ion-content>

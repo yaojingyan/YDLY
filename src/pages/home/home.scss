@@ -4,14 +4,17 @@ page-home {
 .toolbar-md{
   padding: 0;
 }
-//首页头部
-.homeheader .toolbar-background-md{
+.ion-md-arrow-back::before{
+  content:url(../assets/homeimg/left1.png);
+}
+.toolbar-background-md{
   background-color: cornflowerblue;
 }
-.hometitle .toolbar-title-md{
+.toolbar-title-md{
   text-align: center;
   color: #fff;
 }
+//首页头部
 .hometitle img{
   width: 24px;
   height: 24px;

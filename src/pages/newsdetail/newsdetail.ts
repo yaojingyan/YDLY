@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import {NewsdiscussPage} from "../newsdiscuss/newsdiscuss";
 
 /**
  * Generated class for the NewsdetailPage page.
@@ -18,6 +19,8 @@ export class NewsdetailPage {
               public navParams: NavParams) {
     this.newsdetail = this.navParams.get('item');
   }
-
+  newsdiscuss(){
+    this.navCtrl.push(NewsdiscussPage);
+  }
 
 }

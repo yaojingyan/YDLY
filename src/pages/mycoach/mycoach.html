@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的教练</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="mycoach">
+  <div class="coachtab">
+    <ion-segment [(ngModel)]="persons" >
+      <ion-segment-button value="咨询的" class="persons">
+        咨询的
+      </ion-segment-button>
+      <ion-segment-button value="关注的" class="persons">
+        关注的
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-content>

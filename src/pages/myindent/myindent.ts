@@ -5,7 +5,7 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'myindent.html',
 })
 export class MyindentPage {
-
+  goods:string ="全部";
   constructor(public navCtrl: NavController,
               public navParams: NavParams) {
   }

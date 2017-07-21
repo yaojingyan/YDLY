@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的活动</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="myactivity">
+  <div class="activitytab">
+    <ion-segment [(ngModel)]="activities" >
+      <ion-segment-button value="参加的" class="activities">
+        参加的
+      </ion-segment-button>
+      <ion-segment-button value="创建的" class="activities">
+        创建的
+      </ion-segment-button>
+      <ion-segment-button value="有兴趣的" class="activities">
+        有兴趣的
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-content>

@@ -2,7 +2,8 @@
   <ion-navbar>
     <ion-title>
       新闻公告
-      <img src="assets/homeimg/discuss.png" alt="写评论" float-right>
+      <img (click)="newsdiscuss()"
+        src="assets/homeimg/discuss.png" alt="写评论" float-right>
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -13,11 +14,11 @@
 </ion-content>
 
 
-<ion-footer>
-  <ion-toolbar  class="newsdetailfooter">
+<ion-footer class="newsd">
+  <ion-toolbar class="newsdetailfooter">
     <input placeholder="没事你就说两句" type="text">
     <ion-buttons end>
-      <button icon-right class="newsdetail">
+      <button icon-right class="detailcomment">
         评论
       </button>
     </ion-buttons>

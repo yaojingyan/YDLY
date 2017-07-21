@@ -1,20 +1,20 @@
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar class="setheader">
     <ion-title class="setTitle">系统设置</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
+<ion-content class="setcontent">
   <ion-item-group>
-    <button ion-item  class="setlist"
+    <ion-item  class="setlist"
             *ngFor="let item of items"
             (click)="itemSelected(item)">
       {{ item }}
-      <ion-icon name="ios-arrow-forward"></ion-icon>
-    </button>
+      <img src="assets/homeimg/right.png" float-right>
+    </ion-item>
   </ion-item-group>
   <button class="quit">退出当前账号</button>
 </ion-content>

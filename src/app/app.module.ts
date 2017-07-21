@@ -23,6 +23,14 @@ import {MytestPage} from "../pages/mytest/mytest";
 import {SettingPage} from "../pages/setting/setting";
 import {HomePage} from "../pages/home/home";
 import {NewsdetailPage} from "../pages/newsdetail/newsdetail";
+import {MyactivityPage} from "../pages/myactivity/myactivity";
+import {MycoachPage} from "../pages/mycoach/mycoach";
+import {MyplacePage} from "../pages/myplace/myplace";
+import {MytrainPage} from "../pages/mytrain/mytrain";
+import {MycompetitionPage} from "../pages/mycompetition/mycompetition";
+import {MyrunPage} from "../pages/myrun/myrun";
+import {MyorganizationPage} from "../pages/myorganization/myorganization";
+import {NewsdiscussPage} from "../pages/newsdiscuss/newsdiscuss";
 
 @NgModule({
   declarations: [
@@ -43,7 +51,15 @@ import {NewsdetailPage} from "../pages/newsdetail/newsdetail";
     ZhucePage,
     MissPage,
     SettingPage,
-    NewsdetailPage
+    NewsdetailPage,
+    MyactivityPage,
+    MycoachPage,
+    MyplacePage,
+    MytrainPage,
+    MycompetitionPage,
+    MyrunPage,
+    MyorganizationPage,
+    NewsdiscussPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -63,12 +79,19 @@ import {NewsdetailPage} from "../pages/newsdetail/newsdetail";
     LoginPage,
     ZhucePage,
     MissPage,
-
     ZhucePage,
     MyrepairPage,
     MytestPage,
     SettingPage,
-    NewsdetailPage
+    NewsdetailPage,
+    MyactivityPage,
+    MycoachPage,
+    MyplacePage,
+    MytrainPage,
+    MycompetitionPage,
+    MyrunPage,
+    MyorganizationPage,
+    NewsdiscussPage
   ],
   providers: [
     StatusBar,

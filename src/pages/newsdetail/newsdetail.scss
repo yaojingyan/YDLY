@@ -3,7 +3,7 @@ page-newsdetail {
 }
 //首页头部
 .newsheader .toolbar-background-md{
-  background-color: cornflowerblue;
+  background-color: #6495ed;
 }
 .newsheader .toolbar-title-md{
   text-align: center;
@@ -12,4 +12,38 @@ page-newsdetail {
 .newsheader img{
   width: 24px;
   height: 24px;
+}
+ //新闻内容样式
+ .title{
+   text-align: center;
+   word-wrap: break-word;
+   word-break: break-all;
+ }
+.title span{
+  font-size: 28px;
+  padding: 15px;
+  font-weight: bold;
+}
+//脚部
+.newsd .toolbar-md{
+  min-height:45px !important;
+}
+.newsd ion-toolbar{
+  height:45px;
+}
+.newsd .toolbar-background-md{
+  background-color: #fff;
+}
+.newsdetailfooter input{
+  margin-left: 15px;
+  padding:5px 10px;
+  width:85%;
+  border:1px solid #ccc;
+  border-radius: 7px;
+}
+.detailcomment{
+  padding:7px 10px;
+  margin-right: 7px;
+  color: #fff;
+  background-color: #6495ed;
 }

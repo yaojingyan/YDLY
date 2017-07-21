@@ -7,6 +7,13 @@ import {MyindentPage} from "../myindent/myindent";
 import {MytestPage} from "../mytest/mytest";
 import {MyrepairPage} from "../myrepair/myrepair";
 import {SettingPage} from "../setting/setting";
+import {MycoachPage} from "../mycoach/mycoach";
+import {MyplacePage} from "../myplace/myplace";
+import {MyactivityPage} from "../myactivity/myactivity";
+import {MycompetitionPage} from "../mycompetition/mycompetition";
+import {MytrainPage} from "../mytrain/mytrain";
+import {MyorganizationPage} from "../myorganization/myorganization";
+import {MyrunPage} from "../myrun/myrun";
 
 @Component({
   selector: 'page-my',
@@ -57,5 +64,33 @@ export class MyPage {
   //进入设置页面
   set(){
     this.navCtrl.push(SettingPage);
+  }
+  //进入我的教练页面
+  goCoach(){
+    this.navCtrl.push(MycoachPage);
+  }
+  //进入我的场地页面
+  goPlace(){
+    this.navCtrl.push(MyplacePage);
+  }
+  //进入我的活动页面
+  goActivity(){
+    this.navCtrl.push(MyactivityPage);
+  }
+  //进入我的赛事页面
+  goCompetition(){
+    this.navCtrl.push(MycompetitionPage);
+  }
+  //进入我的培训页面
+  goTrain(){
+    this.navCtrl.push(MytrainPage);
+  }
+  //进入我的社团页面
+  goOrganization(){
+    this.navCtrl.push(MyorganizationPage);
+  }
+  //进入智能跑页面
+  goRun(){
+    this.navCtrl.push(MyrunPage);
   }
 }
