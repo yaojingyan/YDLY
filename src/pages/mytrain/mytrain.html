@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的培训</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="mytrain">
+  <div class="traintab">
+    <ion-segment [(ngModel)]="trains" >
+      <ion-segment-button value="未开始" class="trains">
+        未开始
+      </ion-segment-button>
+      <ion-segment-button value="进行中" class="trains">
+        进行中
+      </ion-segment-button>
+      <ion-segment-button value="已结束" class="trains">
+        已结束
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-content>

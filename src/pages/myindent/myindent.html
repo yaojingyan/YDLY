@@ -1,0 +1,23 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的订单</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content class="myindent">
+  <div class="indenttab">
+    <ion-segment [(ngModel)]="goods" >
+      <ion-segment-button value="全部" class="goods">
+        全部
+      </ion-segment-button>
+      <ion-segment-button value="待付款" class="goods">
+        待付款
+      </ion-segment-button>
+      <ion-segment-button value="已付款" class="goods">
+        已付款
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-content>

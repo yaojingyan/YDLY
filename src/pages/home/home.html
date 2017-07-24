@@ -1,0 +1,106 @@
+<ion-header  class="homeheader">
+  <ion-navbar>
+    <ion-title class="hometitle">
+      云动洛阳
+      <img src="assets/homeimg/scan-code.png" alt="" float-right>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="home">
+  <ion-slides class="slide" autoplay="3000" loop pager>
+    <ion-slide>
+      <img src="assets/homeimg/slide1.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/homeimg/slide2.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/homeimg/slide3.jpg" alt="">
+    </ion-slide>
+    <ion-slide>
+      <img src="assets/homeimg/slide4.jpg" alt="">
+    </ion-slide>
+  </ion-slides>
+  <ion-grid  class="homemenu">
+    <ion-row class="line">
+      <ion-col col-3>
+        <div class="picture pic1">
+          <img src="assets/homeimg/fs-institute.png" alt="">
+        </div>
+        场地
+      </ion-col>
+      <ion-col col-3>
+        <div class="picture pic2">
+          <img src="assets/homeimg/gift.png" alt="">
+        </div>
+        活动
+      </ion-col>
+      <ion-col col-3>
+        <div class="picture pic3">
+          <img src="assets/homeimg/home.png" alt="">
+        </div>
+        培训
+      </ion-col>
+      <ion-col col-3>
+        <div class="picture pic4">
+          <img src="assets/homeimg/double.png" alt="">
+        </div>
+        教练
+      </ion-col>
+    </ion-row>
+    <ion-row class="line">
+      <ion-col col-3>
+        <div class="picture pic5">
+          <img src="assets/homeimg/dis-organization.png" alt="">
+        </div>
+        社团组织
+      </ion-col>
+      <ion-col col-3>
+        <div class="picture pic6">
+          <img src="assets/homeimg/test.png" alt="">
+        </div>
+        体质测定
+      </ion-col>
+      <ion-col col-3>
+        <div class="picture pic7">
+          <img src="assets/homeimg/runway.png" alt="">
+        </div>
+        智能跑道
+      </ion-col>
+      <ion-col col-3>
+        <div class="picture pic8">
+          <img src="assets/homeimg/set-manage.png" alt="">
+        </div>
+        设备报修
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-5.5 class="hometip sport">
+        <img src="assets/homeimg/sport.png" alt="">
+        <span>体育商城</span>
+      </ion-col>
+      <ion-col col-1></ion-col>
+      <ion-col col-5.5 class="hometip run">
+        <img src="assets/homeimg/run.png" alt="">
+        <span>走跑运动</span>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <div>
+    <div class="news">
+      <span>新闻公告</span>
+    </div>
+    <ion-list>
+      <button ion-item *ngFor="let newsitem of news"
+              class="newsbox" (click)="itemSelected(newsitem)">
+        <div class="newsimg">
+          <img src="{{newsitem.newsimg}}" alt="">
+        </div>
+        <span class="newstitle">{{newsitem.newstitle}}</span>
+        <span class="newscomment">{{newsitem.newscomment}}评</span>
+        <p class="newsSubtitle">{{newsitem.newssubtitle}}</p>
+      </button>
+    </ion-list>
+  </div>
+</ion-content>

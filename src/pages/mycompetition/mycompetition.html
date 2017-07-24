@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>我的赛事</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="mycompetition">
+  <div class="competitiontab">
+    <ion-segment [(ngModel)]="match" >
+      <ion-segment-button value="已报名" class="match">
+        已报名
+      </ion-segment-button>
+      <ion-segment-button value="已结束" class="match">
+        已结束
+      </ion-segment-button>
+      <ion-segment-button value="感兴趣" class="match">
+        感兴趣
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-content>

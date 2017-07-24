@@ -1,0 +1,149 @@
+page-home {
+}
+//全局样式去除头部的padding
+.toolbar-md{
+  padding: 0;
+}
+.ion-md-arrow-back::before{
+  content:url(../assets/homeimg/left1.png);
+}
+.toolbar-background-md{
+  background-color: cornflowerblue;
+}
+.toolbar-title-md{
+  text-align: center;
+  color: #fff;
+}
+//首页头部
+.hometitle img{
+  width: 24px;
+  height: 24px;
+}
+//首页轮播
+.slide{
+  width:100%;
+  height: 200px;
+  border-bottom: 1px solid #ccc;
+}
+.homemenu{
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.line{
+  padding-bottom: 15px;
+}
+.picture{
+  margin:0 auto;
+  width:28px;
+  height: 28px;
+  border-radius: 8px;
+}
+.pic1{
+  border:1px solid #f2c25d;
+}
+.pic2{
+  border:1px solid #a5dff4;
+}
+.pic3{
+  border:1px solid #bd7db8;
+}
+.pic4{
+  border:1px solid #49bcba;
+}
+.pic5{
+  border:1px solid #e66d5d;
+}
+.pic6{
+  border:1px solid #248162;
+}
+.pic7{
+  border:1px solid #4f92c8;
+}
+.pic8{
+  border:1px solid #1aaba8;
+}
+.picture img{
+  width: 28px;
+  height: 28px;
+  padding:2px;
+}
+.hometip{
+  height: 60px;
+  position: relative;
+}
+.sport{
+  background-color: #fef7e5;
+  color: #9f9065;
+  margin-left:10px;
+}
+.run{
+  background-color: #e5f1ff;
+  color: #7593b9;
+  margin-right: 10px;
+}
+.sport img{
+  position:absolute;
+  top:50%;
+  left:15px;
+  transform:translateY(-50%);
+}
+.run img{
+  position:absolute;
+  top:50%;
+  left:0;
+  transform:translateY(-50%);
+}
+//新闻公告
+.home ion-label{
+  white-space:normal;
+}
+.news span{
+  display: inline-block;
+  margin-left: 20px;
+  width: 100px;
+  height:40px;
+  line-height:40px;
+  position: relative;
+  padding-left: 10px;
+}
+.news span::before{
+  content:"";
+  position: absolute;
+  top:50%;
+  left:0;
+  transform:translateY(-50%);
+  width:3px;
+  height:14px;
+  background-color: #4776c4;
+}
+.newsbox{
+   position: relative;
+   font-size: 14px;
+ }
+.newsimg{
+  width:90px;
+  height: 60px;
+}
+.newstitle{
+  position: absolute;
+  top:15px;
+  left:115px;
+}
+.newscomment{
+  position: absolute;
+  top:15px;
+  right:20px;
+}
+.newsSubtitle{
+  padding:0;
+  position: absolute;
+  top:35px;
+  left:115px;
+  //自动换行
+  word-wrap: break-word;
+  word-break: break-all;
+  opacity:0.8;
+  width:67%;
+}
+
