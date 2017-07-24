@@ -1,0 +1,97 @@
+page-saishi {
+  padding:0;
+  margin: 0;
+  background-color: #ddd;
+}
+.content2{
+  width:100%;
+  height:710px;
+  overflow: hidden;
+  background-color: #ddd;
+  //position: relative;
+}
+.tupian
+{
+  width: 100%;
+  height: 120px;
+ }
+.image{
+  width:100%;
+  height:120px;
+}
+.nav{
+  width:100%;
+  height:50px;
+  height:50px;
+  overflow: hidden;
+
+}
+.nav ul{
+  list-style: none;
+  width:100%;
+  height:50px;
+  overflow: hidden;
+  margin:0;
+  padding:0;
+}
+.nav ul li{
+  width:33.3%;
+  height:50px;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  border-right:1px solid #ddd;
+  margin:0;
+  padding:0;
+}
+.current{
+  width:100%;
+  height:350px;
+  background-color:white;
+  margin-top:10px;
+  padding:0;
+
+}
+.current p{
+  clear: both;
+  padding:10px;
+  margin:0;
+
+}
+.rules{
+  background-color:white;
+  width:100%;
+  height:35px;
+  text-align: left;
+  line-height: 30px;
+  margin-top:20px;
+  padding-left:10px;
+}
+.foot{
+  background-color:white;
+  width:100%;
+  height:35px;
+  margin:0px;
+  padding:0;
+}
+.foot .num{
+  background-color:white;
+  width:100%;
+  height:35px;
+  margin:0px;
+  padding-left:10px;
+  line-height:35px;
+}
+ .baoming{
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  color:white;
+  text-algin:center;
+  width:100px;
+  height:25px;
+  line-height:25px;
+   float:right;
+   margin-top: 4px;
+   margin-right: 5px;
+}
+

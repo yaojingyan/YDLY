@@ -1,0 +1,36 @@
+<ion-header >
+  <ion-navbar >
+    <ion-title class="tou">2017年首届“水分子杯”绿色低碳环湖健步运动会</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="content2">
+<div class="tupian">
+  <img src="{{matchimg}}" alt="" class="image">
+</div>
+  <div class="nav">
+    <ul>
+        <li><img src="{{matchlike}}" alt="">45</li>
+        <li><img src="{{matchpraise}}" alt="">10</li>
+        <li><img src="{{matchshare}}" alt="" ></li>
+    </ul>
+  </div>
+  <div class="current">
+      <p>赛事名称: {{matchtitle}}</p>
+      <p>参与人限：{{limitpeople}}</p>
+      <p>赛事费用：{{entryfees}}</p>
+      <p>发布单位：{{matchunit}}</p>
+      <p>咨询人员：{{consultant}}</p>
+      <p>咨询电话：{{hotline}}</p>
+      <p>比赛地点：{{matchplace}}</p>
+      <p>报名时间：{{registime}}</p>
+      <p>比赛时间：{{matchtime}}</p>
+
+  </div>
+  <p class="rules" (click)="go(matchrule)">赛事规程：点击查看赛事规程   ></p>
+</ion-content>
+  <ion-footer class="foot">
+  <p class="num">报名人数：{{matchapplicants}}
+      <button class="baoming">点击报名</button>
+  </p>
+  </ion-footer>

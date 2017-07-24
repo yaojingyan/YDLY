@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
 
-import { IndexPage } from '../pages/index/index';
 import { ContactPage } from '../pages/contact/contact';
 import { SearchPage } from '../pages/search/search';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -14,7 +13,6 @@ import {SaishiPage} from "../pages/saishi/saishi";
 import {MyPage} from "../pages/my/my";
 import {Saishi2Page} from "../pages/saishi2/saishi2";
 import { SsyServiceProvider } from '../providers/ssy-service/ssy-service';
-import {HttpModule} from "@angular/http";
 import {Saishi3Page} from "../pages/saishi3/saishi3";
 
 import {LoginPage} from "../pages/login/login";
