@@ -11,10 +11,10 @@
   <ion-item-group>
     <ion-item  class="setlist"
             *ngFor="let item of items"
-            (click)="itemSelected(item)">
-      {{ item }}
+            (click)="itemSelected(item.page)">
+      {{ item.title }}
       <img src="assets/homeimg/right.png" float-right>
     </ion-item>
   </ion-item-group>
-  <button class="quit">退出当前账号</button>
+  <button class="quit" (click)="quit()">退出当前账号</button>
 </ion-content>

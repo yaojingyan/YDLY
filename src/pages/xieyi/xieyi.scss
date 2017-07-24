@@ -1,0 +1,24 @@
+page-xieyi {
+
+}
+//头部样式
+.xieyiheader .toolbar-background-md{
+  background-color: #fff;
+}
+.xieyiheader .toolbar-title-md{
+  text-align: center;
+  color: #000;
+}
+.xieyiheader .ion-md-arrow-back::before{
+  content:url(../assets/homeimg/left2.png);
+}
+span.bt{
+   padding:0 22%;
+   font-size: 20px;
+  font-weight: bold;
+ }
+span.title{
+  font-size:16px;
+  font-weight: bold;
+}
+

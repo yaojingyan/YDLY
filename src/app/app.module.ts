@@ -31,6 +31,13 @@ import {MycompetitionPage} from "../pages/mycompetition/mycompetition";
 import {MyrunPage} from "../pages/myrun/myrun";
 import {MyorganizationPage} from "../pages/myorganization/myorganization";
 import {NewsdiscussPage} from "../pages/newsdiscuss/newsdiscuss";
+import {AccountsettingsPage} from "../pages/accountsettings/accountsettings";
+import {XieyiPage} from "../pages/xieyi/xieyi";
+import {GuanyuPage} from "../pages/guanyu/guanyu";
+import {ClearPage} from "../pages/clear/clear";
+import {PlacePage} from "../pages/place/place";
+import {TrainPage} from "../pages/train/train";
+import {TraindetailPage} from "../pages/traindetail/traindetail";
 
 @NgModule({
   declarations: [
@@ -59,7 +66,14 @@ import {NewsdiscussPage} from "../pages/newsdiscuss/newsdiscuss";
     MycompetitionPage,
     MyrunPage,
     MyorganizationPage,
-    NewsdiscussPage
+    NewsdiscussPage,
+    AccountsettingsPage,
+    XieyiPage,
+    GuanyuPage,
+    ClearPage,
+    PlacePage,
+    TrainPage,
+    TraindetailPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -91,7 +105,14 @@ import {NewsdiscussPage} from "../pages/newsdiscuss/newsdiscuss";
     MycompetitionPage,
     MyrunPage,
     MyorganizationPage,
-    NewsdiscussPage
+    NewsdiscussPage,
+    AccountsettingsPage,
+    XieyiPage,
+    GuanyuPage,
+    ClearPage,
+    PlacePage,
+    TrainPage,
+    TraindetailPage
   ],
   providers: [
     StatusBar,

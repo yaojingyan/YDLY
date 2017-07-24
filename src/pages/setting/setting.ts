@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the SettingPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+import {NavController, NavParams} from 'ionic-angular';
+import {AccountsettingsPage} from "../accountsettings/accountsettings";
+import {XieyiPage} from "../xieyi/xieyi";
+import {GuanyuPage} from "../guanyu/guanyu";
+import {ClearPage} from "../clear/clear";
+import {LoginPage} from "../login/login";
 
 @Component({
   selector: 'page-setting',
@@ -14,16 +12,18 @@ import { NavController, NavParams } from 'ionic-angular';
 })
 export class SettingPage {
   items=[
-    '账号设置',
-    '清除缓存',
-    '软件许可协议',
-    '关于云动洛阳',
+    {title:'账号设置',page: AccountsettingsPage},
+    {title:'清除缓存', page: ClearPage},
+    {title:'软件许可协议',page: XieyiPage},
+    {title:'关于云动洛阳',page: GuanyuPage}
   ];
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams) {
   }
-
-  itemSelected(item:string){
-    console.log();
+  itemSelected(page){
+    this.navCtrl.push(page);
   }
-
+  quit(){
+    this.navCtrl.push(LoginPage);
+  }
 }
