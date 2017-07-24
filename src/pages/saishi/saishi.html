@@ -1,13 +1,21 @@
 
 <ion-header>
-
-  <ion-navbar>
-    <ion-title>赛事</ion-title>
+  <ion-navbar >
+    <ion-title class="tou">赛事</ion-title>
   </ion-navbar>
-
 </ion-header>
-
-
-<ion-content padding>
-赛事
+<ion-content class="content1">
+  <ul>
+      <li *ngFor="let item of items" class="saishi1" (click)="go(item.id)" >
+        <div class="tupian">
+          <img src="{{item.img}}" alt="" class="img">
+        </div>
+        <p class="biaoti">{{item.title}}</p>
+        <p class="shijian">{{item.time}}</p>
+        <p class="feiyong">{{item.feiyong}}</p>
+        <p class="dizhi">{{item.address}}</p>
+      </li>
+    </ul>
 </ion-content>
+
+
