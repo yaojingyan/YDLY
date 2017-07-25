@@ -2,6 +2,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
+
 import { ContactPage } from '../pages/contact/contact';
 import { SearchPage } from '../pages/search/search';
 import { TabsPage } from '../pages/tabs/tabs';
@@ -10,6 +11,9 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {SaishiPage} from "../pages/saishi/saishi";
 import {MyPage} from "../pages/my/my";
+import {Saishi2Page} from "../pages/saishi2/saishi2";
+import { SsyServiceProvider } from '../providers/ssy-service/ssy-service';
+import {Saishi3Page} from "../pages/saishi3/saishi3";
 
 import {LoginPage} from "../pages/login/login";
 import {HttpModule} from "@angular/http";
@@ -32,6 +36,13 @@ import {MyrunPage} from "../pages/myrun/myrun";
 import {MyorganizationPage} from "../pages/myorganization/myorganization";
 import {NewsdiscussPage} from "../pages/newsdiscuss/newsdiscuss";
 import {PinglunPage} from "../pages/pinglun/pinglun";
+import {AccountsettingsPage} from "../pages/accountsettings/accountsettings";
+import {XieyiPage} from "../pages/xieyi/xieyi";
+import {GuanyuPage} from "../pages/guanyu/guanyu";
+import {ClearPage} from "../pages/clear/clear";
+import {PlacePage} from "../pages/place/place";
+import {TrainPage} from "../pages/train/train";
+import {TraindetailPage} from "../pages/traindetail/traindetail";
 
 @NgModule({
   declarations: [
@@ -41,6 +52,9 @@ import {PinglunPage} from "../pages/pinglun/pinglun";
     HomePage,
     SaishiPage,
     MyPage,
+    TabsPage,
+    Saishi2Page,
+    Saishi3Page,
     MymessagePage,
     MyindentPage,
     TabsPage,
@@ -60,6 +74,14 @@ import {PinglunPage} from "../pages/pinglun/pinglun";
     MycompetitionPage,
     MyrunPage,
     MyorganizationPage,
+    NewsdiscussPage,
+    AccountsettingsPage,
+    XieyiPage,
+    GuanyuPage,
+    ClearPage,
+    PlacePage,
+    TrainPage,
+    TraindetailPage
     NewsdiscussPage,
     PinglunPage
   ],
@@ -94,13 +116,28 @@ import {PinglunPage} from "../pages/pinglun/pinglun";
     MyrunPage,
     MyorganizationPage,
     NewsdiscussPage,
+<<<<<<< HEAD
+    AccountsettingsPage,
+    XieyiPage,
+    GuanyuPage,
+    ClearPage,
+    PlacePage,
+    TrainPage,
+    TraindetailPage
+=======
+    TabsPage,
+    Saishi2Page,
+    Saishi3Page
+>>>>>>> origin/master
+    NewsdiscussPage,
     PinglunPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    SsyServiceProvider,
     UserService,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}

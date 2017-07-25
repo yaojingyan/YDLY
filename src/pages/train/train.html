@@ -1,0 +1,24 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>培训</ion-title>
+    <div class="shaixuan">
+      <span>筛选</span>
+      <img src="assets/myimg/shaixuan.png" alt="" >
+    </div>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="train">
+    <ul>
+      <li *ngFor="let train of trains" (click)="itemSelected(item)">
+        <img src="{{train.trainimg}}">
+        <span class="biaoti">{{train.traintitle}}</span>
+        <span class="fenlei">{{train.fenlei}}</span>
+        <span class="pnumber">已报名{{train.pnumber}}/{{train.ptotal}}</span>
+        <span class="price">￥{{train.price}}</span>
+      </li>
+    </ul>
+</ion-content>

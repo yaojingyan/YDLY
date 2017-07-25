@@ -3,6 +3,9 @@ import { NavController } from 'ionic-angular';
 import {Http} from "@angular/http";
 import 'rxjs/add/operator/toPromise';
 import {NewsdetailPage} from "../newsdetail/newsdetail";
+import {PlacePage} from "../place/place";
+import {TrainPage} from "../train/train";
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -12,7 +15,6 @@ export class HomePage  implements OnInit {
 
   constructor(public navCtrl: NavController,
               public http: Http) {
-
   }
 
   ngOnInit():void {
@@ -28,6 +30,12 @@ export class HomePage  implements OnInit {
   }
   itemSelected(params?:Object){
     this.navCtrl.push(NewsdetailPage,{item:params});
+  }
+  place(){
+    this.navCtrl.push(PlacePage);
+  }
+  train(){
+    this.navCtrl.push(TrainPage);
   }
 }
 

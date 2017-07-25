@@ -1,0 +1,102 @@
+page-saishi {
+  padding:0;
+  margin: 0;
+  background-color: #ddd;
+}
+.content2{
+  width:100%;
+  height:710px;
+  //overflow: hidden;
+  background-color: #ddd;
+  //position: relative;
+}
+.content2 .tupian
+{
+  width: 100%;
+  height: 120px;
+ }
+.content2 .image{
+  width:100%;
+  height:120px;
+}
+.content2 .nav{
+  width:100%;
+  height:30px;
+  background-color:white;
+}
+.content2 .nav ul{
+  list-style: none;
+  width:100%;
+  height:30px;
+  //overflow: hidden;
+  margin:0;
+  padding:0;
+}
+.content2 .nav ul li{
+  width:33.3%;
+  height:30px;
+  float: left;
+  text-align: center;
+  line-height: 30px;
+  border-right:1px solid #ddd;
+  margin:0;
+  padding:0;
+}
+.content2 .current{
+  width:100%;
+  height:380px;
+  background-color:white;
+  margin-top:10px;
+  padding:0;
+}
+.content2 .current p{
+  clear: both;
+  padding:12px;
+  margin:0;
+}
+.content2 .rules{
+  background-color:white;
+  width:100%;
+  height:40px;
+  text-align: left;
+  line-height: 40px;
+  margin:30px 0 0 0;
+  padding:0;
+}
+.foot{
+  background-color:white;
+  width:100%;
+  height:35px;
+  margin:0;
+  padding:0;
+}
+.foot .num{
+  background-color:white;
+  width:100%;
+  height:35px;
+  margin:0;
+  padding-left:10px;
+  line-height:35px;
+}
+ .baoming{
+  border: 1px solid #ddd;
+  background-color: #ddd;
+  color:white;
+  text-align:center;
+  width:100px;
+  height:25px;
+  line-height:25px;
+   float:right;
+   margin-top: 4px;
+   margin-right: 5px;
+}
+.content2 .nav .xin{
+   vertical-align: middle;
+ }
+.content2 .nav .zan{
+  vertical-align: middle;
+}
+.content2 .nav .fenxiang{
+  vertical-align: middle;
+}
+

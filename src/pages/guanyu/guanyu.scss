@@ -1,0 +1,31 @@
+page-guanyu {
+
+}
+//头部样式
+.guanyuheader .toolbar-background-md{
+  background-color: #fff;
+}
+.guanyuheader .toolbar-title-md{
+  text-align: center;
+  color: #000;
+}
+.guanyuheader .ion-md-arrow-back::before{
+  content:url(../assets/homeimg/left2.png);
+}
+
+.guanyu{
+  background-color: #f9f9f9;
+}
+.logo{
+  text-align: center;
+  color: gray;
+  padding-top: 50px;
+}
+.copy{
+  font-size: 14px;
+  text-align: center;
+  margin-top: 65px;
+}
+.copy span{
+  color: darkolivegreen;
+}
