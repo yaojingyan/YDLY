@@ -20,7 +20,7 @@ import {MissPage} from "../miss/miss";
 })
 export class LoginPage {
   user:{}={};
-
+  x = 0;
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public app:App,
@@ -40,9 +40,25 @@ export class LoginPage {
       .toPromise()
       .then((res)=>{
       console.log(res);
-        if (res.json().success){
-          this.us.user = this.user;
-          this.navCtrl.setRoot(MyPage);
+        if (res.json().success)
+        {
+          this.x = res.json().data[0];
+          console.log(this.x);
+          this.http.post('http://localhost:3000/user',this.x)
+            .toPromise()
+            .then((res)=>{
+              console.log(res);
+              if (res.json().success){
+
+                this.us.user = res.json().data[0];
+                this.navCtrl.setRoot(MyPage);
+
+              }
+
+            })
+
+          // this.us.user = this.user;
+          // this.navCtrl.setRoot(MyPage);
 
         }
 

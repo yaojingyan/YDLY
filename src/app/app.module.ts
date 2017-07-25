@@ -31,6 +31,7 @@ import {MycompetitionPage} from "../pages/mycompetition/mycompetition";
 import {MyrunPage} from "../pages/myrun/myrun";
 import {MyorganizationPage} from "../pages/myorganization/myorganization";
 import {NewsdiscussPage} from "../pages/newsdiscuss/newsdiscuss";
+import {PinglunPage} from "../pages/pinglun/pinglun";
 
 @NgModule({
   declarations: [
@@ -59,7 +60,8 @@ import {NewsdiscussPage} from "../pages/newsdiscuss/newsdiscuss";
     MycompetitionPage,
     MyrunPage,
     MyorganizationPage,
-    NewsdiscussPage
+    NewsdiscussPage,
+    PinglunPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -91,7 +93,8 @@ import {NewsdiscussPage} from "../pages/newsdiscuss/newsdiscuss";
     MycompetitionPage,
     MyrunPage,
     MyorganizationPage,
-    NewsdiscussPage
+    NewsdiscussPage,
+    PinglunPage
   ],
   providers: [
     StatusBar,

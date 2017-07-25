@@ -22,8 +22,8 @@ import {MyrunPage} from "../myrun/myrun";
 export class MyPage {
   // user:{};
   user = [];
-  phone='';
-
+  name='';
+  touimg = '';
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public app: App,
@@ -33,8 +33,10 @@ export class MyPage {
     if(this.us.user)
     {
       this.user.push(this.us.user);
-      console.log(this.user[0].phone);
-      this.phone = this.user[0].phone;
+
+      this.name = this.user[0].name;
+
+      this.touimg = this.user[0].touimg;
     }
   }
 
@@ -50,8 +52,8 @@ export class MyPage {
   golog()
   {
       this.navCtrl.setRoot(LoginPage);
-      this.user.push(this.us.user);
-      console.log(this.user[0]);
+      // this.user.push(this.us.user);
+      // console.log(this.user[0]);
   }
   //进入体测页面
   goTest(){
