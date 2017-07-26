@@ -54,6 +54,8 @@ export class MissPage {
     this.yihuoqu=true;
     this.sa = Math.ceil(Math.random()*90001+99999);
     this.phonenum = this.user.phone;
+
+
     this.http.post('http://localhost:3000/users/yzm',{phone:this.phonenum,yzm:this.sa})
       .toPromise()
       .then((res)=>{
@@ -63,6 +65,11 @@ export class MissPage {
 
         }
       })
+
+  }
+
+  zaiciyzm()
+  {
 
   }
 
