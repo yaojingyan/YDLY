@@ -1,24 +1,22 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the TraindetailPage page.
- *
- * See http://ionicframework.com/docs/components/#navigation for more info
- * on Ionic pages and navigation.
- */
+import {OrderconfirmPage} from "../orderconfirm/orderconfirm";
 
 @Component({
   selector: 'page-traindetail',
   templateUrl: 'traindetail.html',
 })
 export class TraindetailPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  slideimg1 = 'assets/myimg/yujia1.jpg';
+  slideimg2 = 'assets/myimg/yujia2.jpg';
+  slideimg3 = 'assets/myimg/yujia3.jpg';
+  detail;
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams) {
+    //接收上一页面传的item对象
+    this.detail = this.navParams.get('item');
   }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad TraindetailPage');
+  apply(){
+    this.navCtrl.push(OrderconfirmPage,{data:this.detail});
   }
-
 }

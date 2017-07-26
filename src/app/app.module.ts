@@ -42,6 +42,8 @@ import {ClearPage} from "../pages/clear/clear";
 import {PlacePage} from "../pages/place/place";
 import {TrainPage} from "../pages/train/train";
 import {TraindetailPage} from "../pages/traindetail/traindetail";
+import {FenleiPage} from "../pages/fenlei/fenlei";
+import {OrderconfirmPage} from "../pages/orderconfirm/orderconfirm";
 
 @NgModule({
   declarations: [
@@ -80,7 +82,9 @@ import {TraindetailPage} from "../pages/traindetail/traindetail";
     ClearPage,
     PlacePage,
     TrainPage,
-    TraindetailPage
+    TraindetailPage,
+    FenleiPage,
+    OrderconfirmPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -113,19 +117,18 @@ import {TraindetailPage} from "../pages/traindetail/traindetail";
     MyrunPage,
     MyorganizationPage,
     NewsdiscussPage,
-<<<<<<< HEAD
     AccountsettingsPage,
     XieyiPage,
     GuanyuPage,
     ClearPage,
     PlacePage,
     TrainPage,
-    TraindetailPage
-=======
+    TraindetailPage,
     TabsPage,
     Saishi2Page,
-    Saishi3Page
->>>>>>> origin/master
+    Saishi3Page,
+    FenleiPage,
+    OrderconfirmPage
   ],
   providers: [
     StatusBar,

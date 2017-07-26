@@ -1,0 +1,18 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>订单确认</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="order">
+    <div class="dingdan">
+      <img src="{{apply.trainimg}}" alt="">
+      <div class="pxname">培训名称：{{apply.traintitle}}</div>
+      <div class="bmf">报 名 费：{{apply.price}}元</div>
+    </div>
+    <div class="heji">合计：{{apply.price}}元</div>
+    <button (click)="refer()">提交订单</button>
+</ion-content>

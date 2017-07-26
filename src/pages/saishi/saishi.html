@@ -1,6 +1,6 @@
 
 <ion-header>
-  <ion-navbar >
+  <ion-navbar>
     <ion-title class="tou">赛事</ion-title>
   </ion-navbar>
 </ion-header>
@@ -11,9 +11,15 @@
           <img src="{{item.img}}" alt="" class="img">
         </div>
         <p class="biaoti">{{item.title}}</p>
-        <p class="shijian">{{item.time}}</p>
+        <p class="shijian">
+          <img src="assets/myimg/time.png" alt="">
+          {{item.time}}
+        </p>
         <p class="feiyong">{{item.feiyong}}</p>
-        <p class="dizhi">{{item.address}}</p>
+        <p class="dizhi">
+          <img src="assets/myimg/addr.png" alt="">
+          {{item.address}}
+        </p>
       </li>
     </ul>
 </ion-content>

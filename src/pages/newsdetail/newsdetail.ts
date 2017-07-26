@@ -20,7 +20,7 @@ export class NewsdetailPage {
     this.newsdetail = this.navParams.get('item');
   }
   newsdiscuss(){
-    this.navCtrl.push(NewsdiscussPage);
+    this.navCtrl.push(NewsdiscussPage,{caption:this.newsdetail});
   }
 
 }

@@ -2,7 +2,7 @@
 
   <ion-navbar>
     <ion-title>培训</ion-title>
-    <div class="shaixuan">
+    <div class="shaixuan" (click)="getFenlei()">
       <span>筛选</span>
       <img src="assets/myimg/shaixuan.png" alt="" >
     </div>
@@ -13,9 +13,10 @@
 
 <ion-content class="train">
     <ul>
-      <li *ngFor="let train of trains" (click)="itemSelected(item)">
+      <li *ngFor="let train of trains" (click)="itemSelected(train)">
         <img src="{{train.trainimg}}">
-        <span class="biaoti">{{train.traintitle}}</span>
+        <div *ngIf="train.tuijian" class="tuijian"></div>
+        <span class="trainbiaoti">{{train.traintitle}}</span>
         <span class="fenlei">{{train.fenlei}}</span>
         <span class="pnumber">已报名{{train.pnumber}}/{{train.ptotal}}</span>
         <span class="price">￥{{train.price}}</span>

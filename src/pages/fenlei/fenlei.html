@@ -1,0 +1,28 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>筛选</ion-title>
+    <img src="assets/myimg/true.png" alt="" class="true"
+     (click)="confirm()">
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="leixing">类型</div>
+  <ul class="flist">
+    <li *ngFor="let item of items">
+      <div
+        (click)="sure(item.fenlei)"
+        [class.selected]="item.fenlei==fenlei"
+        >
+        {{item.fenlei}}
+        <img src="assets/myimg/sure.png"
+             *ngIf="item.fenlei == fenlei"
+             class="sure"
+        >
+      </div>
+    </li>
+  </ul>
+</ion-content>
