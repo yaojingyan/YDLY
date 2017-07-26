@@ -1,73 +1,87 @@
 page-saishi {
 
-  padding:0;
-  margin: 0;
-  background-color: #ddd;
 }
 
 .content1{
-  width:100%;
-  height: 700px;
-  background-color: #ddd;
-  margin-top: -11px;
-
+  //width:100%;
+  //height: 700px;
+  background-color: #f2f2f2;
 }
 .content1 ul
 {
   padding: 0;
+  margin-top:0;
   list-style: none;
   width: 100%;
-  height:700px;
-  position: relative;
-  clear: both;
+  //position: relative;
 }
 .content1 ul li
 {
-  width: 100%;
-  height:140px;
-  color: black;
+  //width: 100%;
+  height:120px;
+  //color: black;
   background-color: white;
-  float: left;
+  //float: left;
   margin-top: 10px;
+  position: relative;
 }
 .content1 .tupian
 {
-  width: 120px;
-  height: 100px;
-  float: left;
-  margin-top:20px;
+  width: 110px;
+  height: 90px;
+  //float: left;
+  //margin-top:20px;
+
+  position: absolute;
+  left:15px;
+  top:15px;
+  border:1px solid red;
 }
-.content1 .img{
-  width:120px;
-  height:100px;
+//.content1 .img{
+//  width:120px;
+//  height:100px;
+//}
+
+.content1 p{
+  margin:0;
+}
+.content1 .biaoti{
+//float: left;
+position: absolute;
+//margin-top:30px;
+//margin-left: 129px;
+  top:15px;
+  left:140px;
+  font-size:16px;
+  white-space:nowrap;
+  text-overflow: ellipsis;
 }
 .content1 .shijian{
   color:grey;
   position: absolute;
-  left:120px;
-  margin-top:60px;
-  float: left;
-
+  left:140px;
+  //margin-top:60px;
+  //float: left;
+  top:50px;
 }
 .content1 .dizhi{
   color: grey;
-  margin-top:90px;
+  //margin-top:90px;
   position: absolute;
-  left:120px;
-  float: left;
-
+  left:140px;
+  //float: left;
+  top:85px;
 }
 .content .feiyong{
-  float: right;
+  //float: right;
   color:red;
-  margin-top:60px;
-}
-.content .biaoti{
-  float: left;
+  //margin-top:60px;
   position: absolute;
-  margin-top:30px;
-  margin-left: 129px;
+  top:50px;
+  right:10px;
+  font-size:16px;
 }
+
 
 
 

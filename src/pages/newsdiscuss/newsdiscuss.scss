@@ -1,26 +1,52 @@
 page-newsdiscuss {
+  .nav{
+    background-color: #efefef;
+    width: 100%;
+    height: 120px;
+    position: relative;
+    .caption{
+      position: absolute;
+      top:25px;
+      left:15px;
+      font-size:22px;
+    }
+    .distime{
+      position: absolute;
+      top:63px;
+      left:15px;
+      color: gray;
+    }
+    .alldis{
+      position: absolute;
+      bottom:6px;
+      left:15px;
+      color: gray;
+    }
+  }
+  //脚部
+  .discuss{
+    .toolbar-md{
+      min-height:45px !important;
+    }
+    ion-toolbar{
+      height:45px;
+    }
+    .toolbar-background-md{
+      background-color: #fff;
+    }
+    .discussfooter input{
+      margin-left: 15px;
+      padding:5px 10px;
+      width:85%;
+      border:1px solid #ccc;
+      border-radius: 7px;
+    }
+    .discusscomment{
+      padding:7px 10px;
+      margin-right: 7px;
+      color: #fff;
+      background-color: #6495ed;
+    }
+  }
+}
 
-}
-//脚部
-.discuss .toolbar-md{
-  min-height:45px !important;
-}
-.discuss ion-toolbar{
-  height:45px;
-}
-.discuss .toolbar-background-md{
-  background-color: #fff;
-}
-.discussfooter input{
-  margin-left: 15px;
-  padding:5px 10px;
-  width:85%;
-  border:1px solid #ccc;
-  border-radius: 7px;
-}
-.discusscomment{
-  padding:7px 10px;
-  margin-right: 7px;
-  color: #fff;
-  background-color: #6495ed;
-}

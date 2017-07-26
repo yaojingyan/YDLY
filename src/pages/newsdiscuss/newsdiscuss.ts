@@ -13,12 +13,14 @@ import { NavController, NavParams } from 'ionic-angular';
   templateUrl: 'newsdiscuss.html',
 })
 export class NewsdiscussPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  caption;
+  constructor(public navCtrl: NavController,
+              public navParams: NavParams) {
+    this.caption = this.navParams.get('caption');
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad NewsdiscussPage');
-  }
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad NewsdiscussPage');
+  // }
 
 }

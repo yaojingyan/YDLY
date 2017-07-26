@@ -10,22 +10,23 @@
 <ion-content class="traindetail">
   <ion-slides class="slide">
     <ion-slide>
-      <img src="assets/homeimg/slide1.jpg" alt="">
+      <img [src]="slideimg1" alt="">
     </ion-slide>
     <ion-slide>
-      <img src="assets/homeimg/slide2.jpg" alt="">
+      <img [src]="slideimg2" alt="">
     </ion-slide>
     <ion-slide>
-      <img src="assets/homeimg/slide3.jpg" alt="">
+      <img [src]="slideimg3" alt="">
     </ion-slide>
   </ion-slides>
+  <div [innerHTML]="detail.trainintro"></div>
 </ion-content>
 
 <ion-footer class="traind">
   <ion-toolbar class="traindetailfooter">
     <span>更多精彩等你来体验 !</span>
     <ion-buttons end>
-      <button icon-right class="apply">
+      <button icon-right class="apply" (click)="apply()">
         点击报名
       </button>
     </ion-buttons>

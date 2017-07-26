@@ -43,6 +43,8 @@ import {ClearPage} from "../pages/clear/clear";
 import {PlacePage} from "../pages/place/place";
 import {TrainPage} from "../pages/train/train";
 import {TraindetailPage} from "../pages/traindetail/traindetail";
+import {FenleiPage} from "../pages/fenlei/fenlei";
+import {OrderconfirmPage} from "../pages/orderconfirm/orderconfirm";
 
 @NgModule({
   declarations: [
@@ -83,7 +85,10 @@ import {TraindetailPage} from "../pages/traindetail/traindetail";
     TrainPage,
     TraindetailPage,
     NewsdiscussPage,
-    PinglunPage
+    PinglunPage,
+    TraindetailPage,
+    FenleiPage,
+    OrderconfirmPage
   ],
   imports: [
     BrowserModule,HttpModule,
@@ -125,8 +130,12 @@ import {TraindetailPage} from "../pages/traindetail/traindetail";
     TrainPage,
     TraindetailPage,
 
+
     TabsPage,
     Saishi2Page,
+    Saishi3Page,
+    FenleiPage,
+    OrderconfirmPage,
     Saishi3Page,
 
     NewsdiscussPage,

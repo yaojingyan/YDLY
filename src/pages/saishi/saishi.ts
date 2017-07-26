@@ -24,7 +24,7 @@ export class SaishiPage {
     this.items = [
       {
         img:'../assets/images/saishi-img/1.png',
-        title: '2017年首届“水分子杯”绿色低碳环...',
+        title: '2017年首届“水分子杯”绿色低碳环湖健步运动会',
         time:'2017年06月17日',
         address:'洛阳市体育公园环湖智能健身步道',
         feiyong:'免费',
@@ -59,13 +59,6 @@ export class SaishiPage {
       }
     })
   }
-
-
-  // ionViewDidLoad() {
-  //   // console.log('ionViewDidLoad SaishiPage');
-  // }
-
-
 }
 
 
