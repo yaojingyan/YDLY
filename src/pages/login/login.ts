@@ -57,9 +57,6 @@ export class LoginPage {
 
             })
 
-          // this.us.user = this.user;
-          // this.navCtrl.setRoot(MyPage);
-
         }
 
       })

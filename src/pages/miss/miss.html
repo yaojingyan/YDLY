@@ -17,7 +17,10 @@
   <div class="cont">
     <div class="yanzhengkuang">
       <input type="text" placeholder="请输入手机号" class="tel" [(ngModel)]="user.phone">
-      <input type="text" placeholder="请输入验证码"><button class="yzm">获取验证码</button>
+      <input type="text" placeholder="请输入验证码">
+      <button class="yzm" *ngIf="!yihuoqu" (click)="yzm()" [class]>获取验证码</button>
+      <button class="yzm selected"  *ngIf="yihuoqu"  (click)="yzm()" [class]>再次获取</button>
+
     </div>
     <div class="mimakuang">
       <input type="password" placeholder="请输入6位以上密码" [(ngModel)]="user.password">
@@ -29,6 +32,11 @@
 
 <style>
 
+  button.selected
+  {
+    background-color: lightgrey !important;
+    color: black !important;
+  }
   .title
   {
     background-color: white !important;

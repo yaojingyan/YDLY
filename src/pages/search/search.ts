@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {App, NavController, NavParams} from 'ionic-angular';
+import {AlertController, App, NavController, NavParams} from 'ionic-angular';
 import {Http} from "@angular/http";
 import {Md5} from "ts-md5/dist/md5";
 import {UserService} from "../../app/user.service";
@@ -18,13 +18,17 @@ export class SearchPage {
   touimg = '';
   nameid = '';
   name = '';
+
   surl='assets/images/dianzan1.png';
   constructor(public navCtrl: NavController,
               public http:Http,
               public us:UserService,
-              public navParams: NavParams
+              public navParams: NavParams,
+              public alertCtrl:AlertController
 
   ) {
+
+
       this.http.get('http://localhost:3000/shuoshuo')
       .toPromise()
       .then((res)=>{
@@ -56,43 +60,55 @@ export class SearchPage {
     }
   }
 
-  dianzan(s,y)
-  {
-    this.d = y;
-    this.h = this.h+1;
-    if (this.h%2!=0)
-    {
-      this.http.post('http://localhost:3000/dianzan',{id:s,zanshu:this.d+1})
-        .toPromise()
-        .then((res)=>{
-          // console.log(res);
-          if (res.json().success)
-          {
-
-          }
-
-        })
-    }
-    else
-    {
-      this.http.post('http://localhost:3000/dianzan',{id:s,zanshu:y-1})
-        .toPromise()
-        .then((res)=>{
-          // console.log(res);
-          if (res.json().success)
-          {
-
-          }
-
-        })
-    }
-  }
-
   pinglun(id)
   {
-    console.log('a');
-    this.navCtrl.push(PinglunPage,{id:id,nameid:this.nameid,name:this.name});
+    if (this.touimg!='')
+    {
+      this.navCtrl.push(PinglunPage,{id:id,nameid:this.nameid,name:this.name,touimg:this.touimg});
+    }
+    else {
+      let alert = this.alertCtrl.create(
+        {
+          title:'请先登录',
+          buttons:['确定']
+        });
+      alert.present();
+    }
   }
+
+  // dianzan(s,y)
+  // {
+  //   this.d = y;
+  //   this.h = this.h+1;
+  //   if (this.h%2!=0)
+  //   {
+  //     this.http.post('http://localhost:3000/dianzan',{id:s,zanshu:this.d+1})
+  //       .toPromise()
+  //       .then((res)=>{
+  //         // console.log(res);
+  //         if (res.json().success)
+  //         {
+  //
+  //         }
+  //
+  //       })
+  //   }
+  //   else
+  //   {
+  //     this.http.post('http://localhost:3000/dianzan',{id:s,zanshu:y-1})
+  //       .toPromise()
+  //       .then((res)=>{
+  //         // console.log(res);
+  //         if (res.json().success)
+  //         {
+  //
+  //         }
+  //
+  //       })
+  //   }
+  // }
+
+
 
 
 

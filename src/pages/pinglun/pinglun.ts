@@ -22,6 +22,7 @@ export class PinglunPage {
   nameid = '';
   cont = '';
   name = '';
+  touimg = '';
   surl='assets/images/dianzan1.png';
   constructor(
                 public navCtrl: NavController,
@@ -33,6 +34,7 @@ export class PinglunPage {
     this.id = navParams.get('id');
     this.nameid = navParams.get('nameid');
     this.name = navParams.get('name');
+    this.touimg = navParams.get('touimg');
     this.http.post('http://localhost:3000/shuoshuo2',{id:this.id})
       .toPromise()
       .then((res)=>{
@@ -67,7 +69,7 @@ export class PinglunPage {
 
   fasong()
   {
-    this.http.post('http://localhost:3000/fasongpinglun',{nameid:this.nameid,toid:this.id,cont:this.cont,name:this.name})
+    this.http.post('http://localhost:3000/fasongpinglun',{nameid:this.nameid,toid:this.id,cont:this.cont,name:this.name,touimg:this.touimg})
       .toPromise()
       .then((res)=>{
 

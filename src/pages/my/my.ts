@@ -95,4 +95,7 @@ export class MyPage {
   goRun(){
     this.navCtrl.push(MyrunPage);
   }
+
+
+
 }

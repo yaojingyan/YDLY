@@ -81,7 +81,7 @@ import {TraindetailPage} from "../pages/traindetail/traindetail";
     ClearPage,
     PlacePage,
     TrainPage,
-    TraindetailPage
+    TraindetailPage,
     NewsdiscussPage,
     PinglunPage
   ],
@@ -116,19 +116,19 @@ import {TraindetailPage} from "../pages/traindetail/traindetail";
     MyrunPage,
     MyorganizationPage,
     NewsdiscussPage,
-<<<<<<< HEAD
+
     AccountsettingsPage,
     XieyiPage,
     GuanyuPage,
     ClearPage,
     PlacePage,
     TrainPage,
-    TraindetailPage
-=======
+    TraindetailPage,
+
     TabsPage,
     Saishi2Page,
-    Saishi3Page
->>>>>>> origin/master
+    Saishi3Page,
+
     NewsdiscussPage,
     PinglunPage
   ],
