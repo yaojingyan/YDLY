@@ -8,12 +8,12 @@ import {TrainPage} from "../train/train";
   templateUrl: 'orderconfirm.html',
 })
 export class OrderconfirmPage {
-  apply;
+  applys;
   constructor(public navCtrl: NavController,
               public navParams: NavParams,
               public alertCtrl:AlertController
   ) {
-    this.apply = this.navParams.get('data');
+    this.applys = this.navParams.get('data');
     // console.log(this.apply);
   }
 

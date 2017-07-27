@@ -9,16 +9,29 @@
 <ion-content>
     <div class="nav">
       <div class="caption">{{caption.newstitle}}</div>
-      <span class="distime">123456</span>
+      <span class="distime">{{caption.newstime | date:'yyyy-MM-dd hh:mm:ss'}}</span>
       <div class="alldis">全部评论()</div>
+    </div>
+    <div class="dis-cont">
+      <ul>
+        <li *ngFor="let pl of umessage">
+          <div class="dis-touimg">
+            <img [src]="pl.touimg">
+          </div>
+          <div class="dis-nr">
+            <span class="dis-name">{{pl.name}}</span>
+            <span class="dis-">{{pl.newsdiscuss}}</span>
+          </div>
+        </li>
+      </ul>
     </div>
 </ion-content>
 
 <ion-footer class="discuss">
   <ion-toolbar class="discussfooter">
-    <input placeholder="没事你就说两句" type="text">
+    <input placeholder="没事你就说两句" type="text" [(ngModel)]="discuss">
     <ion-buttons end>
-      <button icon-right class="discusscomment">
+      <button icon-right class="discusscomment" (click)="discuss()">
         评论
       </button>
     </ion-buttons>

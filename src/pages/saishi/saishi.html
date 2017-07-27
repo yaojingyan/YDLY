@@ -8,16 +8,16 @@
   <ul>
       <li *ngFor="let item of items" class="saishi1" (click)="go(item.id)" >
         <div class="tupian">
-          <img src="{{item.img}}" alt="" class="img">
+          <img src="{{item.img}}"  class="saishi-img">
         </div>
         <p class="biaoti">{{item.title}}</p>
         <p class="shijian">
-          <img src="assets/myimg/time.png" alt="">
+          <img src="assets/myimg/time.png" class="head">
           {{item.time}}
         </p>
         <p class="feiyong">{{item.feiyong}}</p>
         <p class="dizhi">
-          <img src="assets/myimg/addr.png" alt="">
+          <img src="assets/myimg/addr.png" class="head">
           {{item.address}}
         </p>
       </li>

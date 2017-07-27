@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AlertController, App, NavController, NavParams} from 'ionic-angular';
 import {Http} from "@angular/http";
-import {Md5} from "ts-md5/dist/md5";
+// import {Md5} from "ts-md5/dist/md5";
 import {UserService} from "../../app/user.service";
 import set = Reflect.set;
 import {PinglunPage} from "../pinglun/pinglun";

@@ -10,7 +10,6 @@ import {MyPage} from "../my/my";
   templateUrl: 'tabs.html'
 })
 export class TabsPage {
-  num = 0;
   tab1Root = SearchPage;
   tab2Root = ContactPage;
   tab3Root = HomePage;
@@ -18,6 +17,5 @@ export class TabsPage {
   tab5Root = MyPage;
 
   constructor() {
-    this.num = 10;
   }
 }
